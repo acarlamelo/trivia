@@ -1,0 +1,97 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+html, body {
+height: 100%;
+width: 100%;
+}
+
+body {
+height: 100vh;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+gap: 5px;
+color: black;
+  
+}
+ 
+h1 {
+box-shadow: 5px 5px 5px;
+color: purple;
+  
+}
+.name {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+h2 {
+color: purple;
+}
+
+main {
+background-color: white;
+padding: 10px;
+border-radius: 10px;
+width: 100%;
+max-width: 300px;
+min-height: 200px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+body::before {
+content:"";
+background-image: url("kalifa.jpg");
+background-size: cover;
+top:0;
+right:0;
+bottom:0;
+left:0;
+opacity:0.9;
+position:absolute;
+z-index:-1;
+}
+
+.content{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 10px;
+}
+
+.spnQtd {
+  text-align: end;
+}
+
+.answers {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+button {
+  width: 100%;
+  text-align: start;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: purple;
+  color: white;
+}
+
+.finish {
+  display: none;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.finish button {
+  text-align: center;
+}
